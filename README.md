@@ -3,7 +3,7 @@ String tokenization for basic english.
 
 #### Example
 
-```
+```javascript
 const ogden = require("ogden");
 
 let tokens = ogden("Whether you use constructors or literals, your regular expressions can include the following elements and flags. The elements describe the pattern you want to match, while the flags specify how the matching should be performed.");
@@ -11,7 +11,7 @@ let tokens = ogden("Whether you use constructors or literals, your regular expre
 
 The `tokens` variable will now be an Object of categorized tokens:
 
-```
+```javascript
 {
   "directions": [
     "in",
