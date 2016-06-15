@@ -1,7 +1,7 @@
 {
   "name": "ogden",
   "version": "1.0.0",
-  "description": "String tokenization & manipulation",
+  "description": "String tokenization for basic english",
   "main": "lib/ogden.js",
   "scripts": {
     "test": "grunt test"

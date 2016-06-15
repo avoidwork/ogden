@@ -4,7 +4,7 @@
   "authors": [
     "Jason Mulligan <jason.mulligan@avoidwork.com>"
   ],
-  "description": "String tokenization & manipulation",
+  "description": "String tokenization for basic english",
   "main": "lib/ogden.js",
   "moduleType": [
     "amd",
