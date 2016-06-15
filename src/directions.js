@@ -1,0 +1,23 @@
+const directions = [
+	"at",
+	"with",
+	"from",
+	"against",
+	"to",
+	"across",
+	"after",
+	"among",
+	"before",
+	"about",
+	"through",
+	"down",
+	"between",
+	"up",
+	"under",
+	"on",
+	"over",
+	"off",
+	"by",
+	"in",
+	"out"
+];

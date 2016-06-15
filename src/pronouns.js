@@ -1,0 +1,21 @@
+const pronouns = [
+	"i",
+	"you",
+	"he",
+	"she",
+	"it",
+	"we",
+	"you",
+	"they",
+	"me",
+	"we",
+	"us",
+	"you",
+	"he",
+	"she",
+	"it",
+	"him",
+	"her",
+	"they",
+	"them"
+];

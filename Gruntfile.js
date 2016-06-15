@@ -16,9 +16,12 @@ module.exports = function (grunt) {
 			dist: {
 				src : [
 					"src/intro.js",
+					"src/directions.js",
 					"src/operations.js",
 					"src/qualities.js",
+					"src/pronouns.js",
 					"src/things.js",
+					"src/parse.js",
 					"src/ogden.js",
 					"src/outro.js"
 				],
