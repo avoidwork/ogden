@@ -1,0 +1,31 @@
+{
+  "name": "ogden",
+  "homepage": "http://avoidwork.github.io/ogden",
+  "authors": [
+    "Jason Mulligan <jason.mulligan@avoidwork.com>"
+  ],
+  "description": "String tokenization & manipulation",
+  "main": "lib/ogden.js",
+  "moduleType": [
+    "amd",
+    "globals",
+    "node"
+  ],
+  "keywords": [
+    "token",
+    "tokenize",
+    "tokenization",
+    "words"
+  ],
+  "license": "BSD-3-Clause",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "lib/ogden.es6.js",
+    "lib/ogden.min.*",
+    "src",
+    "test",
+    "tests"
+  ]
+}
