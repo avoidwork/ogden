@@ -1,27 +1,19 @@
 function ogden (input = "") {
-	let result;
+	let fn = input.length > 0 ? parse : () => [];
 
-	if (input.length > 0) {
-		result = {
-			directions: parse(input, directions),
-			qualitiesGeneral: parse(input, qualitiesGeneral),
-			qualitiesOpposites: parse(input, qualitiesOpposites),
-			pronouns: parse(input, pronouns),
-			operations: parse(input, operations),
-			thingsGeneral: parse(input, thingsGeneral),
-			thingsPicturable: parse(input, thingsPicturable)
-		};
-	} else {
-		result = {
-			directions: [],
-			qualitiesGeneral: [],
-			qualitiesOpposites: [],
-			pronouns: [],
-			operations: [],
-			thingsGeneral: [],
-			thingsPicturable: []
-		};
-	}
-
-	return result;
+	return {
+		adjectives: fn(input, adjectives),
+		compound: fn(input, compound),
+		directions: fn(input, directions),
+		international: fn(input, international),
+		qualitiesGeneral: fn(input, qualitiesGeneral),
+		qualitiesOpposites: fn(input, qualitiesOpposites),
+		pronouns: fn(input, pronouns),
+		operations: fn(input, operations),
+		thingsGeneral: fn(input, thingsGeneral),
+		thingsPicturable: fn(input, thingsPicturable),
+		verbs: fn(input, verbs)
+	};
 }
+
+ogden.version = "{{VERSION}}";

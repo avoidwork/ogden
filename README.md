@@ -1,5 +1,8 @@
 # ogden
-String tokenization for basic english.
+Basic English tokenizer.
+
+#### Requirements
+- Set
 
 #### Example
 

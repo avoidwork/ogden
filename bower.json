@@ -4,7 +4,7 @@
   "authors": [
     "Jason Mulligan <jason.mulligan@avoidwork.com>"
   ],
-  "description": "String tokenization for basic english",
+  "description": "Basic English tokenizer",
   "main": "lib/ogden.js",
   "moduleType": [
     "amd",
