@@ -16,10 +16,18 @@ The `tokens` variable will now be an Object of categorized tokens:
 
 ```javascript
 {
+  "adjectives": [
+    "be"
+  ],
+  "compound": [],
   "directions": [
     "in",
     "on",
     "to"
+  ],
+  "international": [
+    "liter",
+    "you"
   ],
   "qualitiesGeneral": [
     "regular"
@@ -60,6 +68,9 @@ The `tokens` variable will now be an Object of categorized tokens:
     "flag",
     "match",
     "wing"
+  ],
+  "verbs": [
+    "be"
   ]
 }
 ```
