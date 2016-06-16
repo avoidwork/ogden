@@ -1,6 +1,6 @@
 {
-  "name": "Ogden",
-  "tagline": "String tokenization & manipulation",
-  "body": "# ogden\r\nString tokenization &amp; manipulation\r\n",
+  "name": "ogden",
+  "tagline": "Basic English tokenizer",
+  "body": "# ogden\r\nBasic English tokenizer.\r\n\r\n#### Requirements\r\n- Set\r\n\r\n#### Example\r\n\r\n```javascript\r\nconst ogden = require(\"ogden\");\r\n\r\nlet tokens = ogden(\"Whether you use constructors or literals, your regular expressions can include the following elements and flags. The elements describe the pattern you want to match, while the flags specify how the matching should be performed.\");\r\n```\r\n\r\nThe `tokens` variable will now be an Object of categorized tokens:\r\n\r\n```javascript\r\n{\r\n  \"adjectives\": [\r\n    \"be\"\r\n  ],\r\n  \"compound\": [],\r\n  \"directions\": [\r\n    \"in\",\r\n    \"on\",\r\n    \"to\"\r\n  ],\r\n  \"international\": [\r\n    \"liter\",\r\n    \"you\"\r\n  ],\r\n  \"qualitiesGeneral\": [\r\n    \"regular\"\r\n  ],\r\n  \"qualitiesOpposites\": [\r\n    \"low\"\r\n  ],\r\n  \"pronouns\": [\r\n    \"he\",\r\n    \"i\",\r\n    \"it\",\r\n    \"me\",\r\n    \"us\",\r\n    \"you\"\r\n  ],\r\n  \"operations\": [\r\n    \"a\",\r\n    \"at\",\r\n    \"be\",\r\n    \"for\",\r\n    \"he\",\r\n    \"how\",\r\n    \"i\",\r\n    \"in\",\r\n    \"on\",\r\n    \"or\",\r\n    \"the\",\r\n    \"to\",\r\n    \"while\",\r\n    \"you\"\r\n  ],\r\n  \"thingsGeneral\": [\r\n    \"form\",\r\n    \"use\"\r\n  ],\r\n  \"thingsPicturable\": [\r\n    \"ant\",\r\n    \"flag\",\r\n    \"match\",\r\n    \"wing\"\r\n  ],\r\n  \"verbs\": [\r\n    \"be\"\r\n  ]\r\n}\r\n```\r\n\r\n## How can I load ogden?\r\nogden supports AMD loaders (require.js, curl.js, etc.), node.js & npm (npm install ogden), or using a script tag.\r\n\r\n## License\r\nCopyright (c) 2016 Jason Mulligan\r\nLicensed under the BSD-3 license\r\n",
   "note": "Don't delete this file! It's used internally to help with page regeneration."
 }

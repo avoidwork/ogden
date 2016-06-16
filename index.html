@@ -2,7 +2,7 @@
 <html lang="en-us">
   <head>
     <meta charset="UTF-8">
-    <title>Ogden by avoidwork</title>
+    <title>ogden by avoidwork</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" href="stylesheets/normalize.css" media="screen">
     <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
@@ -11,8 +11,8 @@
   </head>
   <body>
     <section class="page-header">
-      <h1 class="project-name">Ogden</h1>
-      <h2 class="project-tagline">String tokenization &amp; manipulation</h2>
+      <h1 class="project-name">ogden</h1>
+      <h2 class="project-tagline">Basic English tokenizer</h2>
       <a href="https://github.com/avoidwork/ogden" class="btn">View on GitHub</a>
       <a href="https://github.com/avoidwork/ogden/zipball/master" class="btn">Download .zip</a>
       <a href="https://github.com/avoidwork/ogden/tarball/master" class="btn">Download .tar.gz</a>
@@ -22,10 +22,96 @@
       <h1>
 <a id="ogden" class="anchor" href="#ogden" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>ogden</h1>
 
-<p>String tokenization &amp; manipulation</p>
+<p>Basic English tokenizer.</p>
+
+<h4>
+<a id="requirements" class="anchor" href="#requirements" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Requirements</h4>
+
+<ul>
+<li>Set</li>
+</ul>
+
+<h4>
+<a id="example" class="anchor" href="#example" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Example</h4>
+
+<div class="highlight highlight-source-js"><pre><span class="pl-k">const</span> <span class="pl-c1">ogden</span> <span class="pl-k">=</span> <span class="pl-c1">require</span>(<span class="pl-s"><span class="pl-pds">"</span>ogden<span class="pl-pds">"</span></span>);
+
+<span class="pl-k">let</span> tokens <span class="pl-k">=</span> <span class="pl-en">ogden</span>(<span class="pl-s"><span class="pl-pds">"</span>Whether you use constructors or literals, your regular expressions can include the following elements and flags. The elements describe the pattern you want to match, while the flags specify how the matching should be performed.<span class="pl-pds">"</span></span>);</pre></div>
+
+<p>The <code>tokens</code> variable will now be an Object of categorized tokens:</p>
+
+<div class="highlight highlight-source-js"><pre>{
+  <span class="pl-s"><span class="pl-pds">"</span>adjectives<span class="pl-pds">"</span></span><span class="pl-k">:</span> [
+    <span class="pl-s"><span class="pl-pds">"</span>be<span class="pl-pds">"</span></span>
+  ],
+  <span class="pl-s"><span class="pl-pds">"</span>compound<span class="pl-pds">"</span></span><span class="pl-k">:</span> [],
+  <span class="pl-s"><span class="pl-pds">"</span>directions<span class="pl-pds">"</span></span><span class="pl-k">:</span> [
+    <span class="pl-s"><span class="pl-pds">"</span>in<span class="pl-pds">"</span></span>,
+    <span class="pl-s"><span class="pl-pds">"</span>on<span class="pl-pds">"</span></span>,
+    <span class="pl-s"><span class="pl-pds">"</span>to<span class="pl-pds">"</span></span>
+  ],
+  <span class="pl-s"><span class="pl-pds">"</span>international<span class="pl-pds">"</span></span><span class="pl-k">:</span> [
+    <span class="pl-s"><span class="pl-pds">"</span>liter<span class="pl-pds">"</span></span>,
+    <span class="pl-s"><span class="pl-pds">"</span>you<span class="pl-pds">"</span></span>
+  ],
+  <span class="pl-s"><span class="pl-pds">"</span>qualitiesGeneral<span class="pl-pds">"</span></span><span class="pl-k">:</span> [
+    <span class="pl-s"><span class="pl-pds">"</span>regular<span class="pl-pds">"</span></span>
+  ],
+  <span class="pl-s"><span class="pl-pds">"</span>qualitiesOpposites<span class="pl-pds">"</span></span><span class="pl-k">:</span> [
+    <span class="pl-s"><span class="pl-pds">"</span>low<span class="pl-pds">"</span></span>
+  ],
+  <span class="pl-s"><span class="pl-pds">"</span>pronouns<span class="pl-pds">"</span></span><span class="pl-k">:</span> [
+    <span class="pl-s"><span class="pl-pds">"</span>he<span class="pl-pds">"</span></span>,
+    <span class="pl-s"><span class="pl-pds">"</span>i<span class="pl-pds">"</span></span>,
+    <span class="pl-s"><span class="pl-pds">"</span>it<span class="pl-pds">"</span></span>,
+    <span class="pl-s"><span class="pl-pds">"</span>me<span class="pl-pds">"</span></span>,
+    <span class="pl-s"><span class="pl-pds">"</span>us<span class="pl-pds">"</span></span>,
+    <span class="pl-s"><span class="pl-pds">"</span>you<span class="pl-pds">"</span></span>
+  ],
+  <span class="pl-s"><span class="pl-pds">"</span>operations<span class="pl-pds">"</span></span><span class="pl-k">:</span> [
+    <span class="pl-s"><span class="pl-pds">"</span>a<span class="pl-pds">"</span></span>,
+    <span class="pl-s"><span class="pl-pds">"</span>at<span class="pl-pds">"</span></span>,
+    <span class="pl-s"><span class="pl-pds">"</span>be<span class="pl-pds">"</span></span>,
+    <span class="pl-s"><span class="pl-pds">"</span>for<span class="pl-pds">"</span></span>,
+    <span class="pl-s"><span class="pl-pds">"</span>he<span class="pl-pds">"</span></span>,
+    <span class="pl-s"><span class="pl-pds">"</span>how<span class="pl-pds">"</span></span>,
+    <span class="pl-s"><span class="pl-pds">"</span>i<span class="pl-pds">"</span></span>,
+    <span class="pl-s"><span class="pl-pds">"</span>in<span class="pl-pds">"</span></span>,
+    <span class="pl-s"><span class="pl-pds">"</span>on<span class="pl-pds">"</span></span>,
+    <span class="pl-s"><span class="pl-pds">"</span>or<span class="pl-pds">"</span></span>,
+    <span class="pl-s"><span class="pl-pds">"</span>the<span class="pl-pds">"</span></span>,
+    <span class="pl-s"><span class="pl-pds">"</span>to<span class="pl-pds">"</span></span>,
+    <span class="pl-s"><span class="pl-pds">"</span>while<span class="pl-pds">"</span></span>,
+    <span class="pl-s"><span class="pl-pds">"</span>you<span class="pl-pds">"</span></span>
+  ],
+  <span class="pl-s"><span class="pl-pds">"</span>thingsGeneral<span class="pl-pds">"</span></span><span class="pl-k">:</span> [
+    <span class="pl-s"><span class="pl-pds">"</span>form<span class="pl-pds">"</span></span>,
+    <span class="pl-s"><span class="pl-pds">"</span>use<span class="pl-pds">"</span></span>
+  ],
+  <span class="pl-s"><span class="pl-pds">"</span>thingsPicturable<span class="pl-pds">"</span></span><span class="pl-k">:</span> [
+    <span class="pl-s"><span class="pl-pds">"</span>ant<span class="pl-pds">"</span></span>,
+    <span class="pl-s"><span class="pl-pds">"</span>flag<span class="pl-pds">"</span></span>,
+    <span class="pl-s"><span class="pl-pds">"</span>match<span class="pl-pds">"</span></span>,
+    <span class="pl-s"><span class="pl-pds">"</span>wing<span class="pl-pds">"</span></span>
+  ],
+  <span class="pl-s"><span class="pl-pds">"</span>verbs<span class="pl-pds">"</span></span><span class="pl-k">:</span> [
+    <span class="pl-s"><span class="pl-pds">"</span>be<span class="pl-pds">"</span></span>
+  ]
+}</pre></div>
+
+<h2>
+<a id="how-can-i-load-ogden" class="anchor" href="#how-can-i-load-ogden" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>How can I load ogden?</h2>
+
+<p>ogden supports AMD loaders (require.js, curl.js, etc.), node.js &amp; npm (npm install ogden), or using a script tag.</p>
+
+<h2>
+<a id="license" class="anchor" href="#license" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>License</h2>
+
+<p>Copyright (c) 2016 Jason Mulligan
+Licensed under the BSD-3 license</p>
 
       <footer class="site-footer">
-        <span class="site-footer-owner"><a href="https://github.com/avoidwork/ogden">Ogden</a> is maintained by <a href="https://github.com/avoidwork">avoidwork</a>.</span>
+        <span class="site-footer-owner"><a href="https://github.com/avoidwork/ogden">ogden</a> is maintained by <a href="https://github.com/avoidwork">avoidwork</a>.</span>
 
         <span class="site-footer-credits">This page was generated by <a href="https://pages.github.com">GitHub Pages</a> using the <a href="https://github.com/jasonlong/cayman-theme">Cayman theme</a> by <a href="https://twitter.com/jasonlong">Jason Long</a>.</span>
       </footer>
