@@ -1,4 +1,8 @@
-function ogden (input = "") {
+function ogden (input) {
+	if (typeof input !== "string") {
+		throw new TypeError("String required");
+	}
+
 	let fn = input.length > 0 ? parse : () => [];
 
 	return {

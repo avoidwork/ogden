@@ -1,4 +1,4 @@
-function parse (input, words = []) {
+function parse (input, words) {
 	let seen = new Set(),
 		result = input.toLowerCase().match(new RegExp("\\b" + words.join("|") + "\\b", "ig")) || [];
 
