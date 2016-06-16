@@ -1,18 +1,18 @@
 const adjectives = [
 	"be",
-	"do",
-	"have",
 	"come",
-	"go",
+	"do",
+	"get",
 	"give",
-	"take",
+	"go",
+	"have",
+	"keep",
+	"let",
+	"make",
+	"put",
+	"say",
 	"see",
 	"seem",
 	"send",
-	"keep",
-	"make",
-	"say",
-	"let",
-	"get",
-	"put"
+	"take"
 ];
