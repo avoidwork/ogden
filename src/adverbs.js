@@ -1,0 +1,23 @@
+	const adverbs = new Set([
+		"about",
+		"across",
+		"after",
+		"against",
+		"among",
+		"at",
+		"before",
+		"between",
+		"by",
+		"down",
+		"from",
+		"in",
+		"off",
+		"on",
+		"out",
+		"over",
+		"through",
+		"to",
+		"under",
+		"up",
+		"with"
+	]);

@@ -79,5 +79,5 @@ The `tokens` variable will now be an Object of categorized tokens:
 ogden supports AMD loaders (require.js, curl.js, etc.), node.js & npm (npm install ogden), or using a script tag.
 
 ## License
-Copyright (c) 2016 Jason Mulligan
+Copyright (c) 2017 Jason Mulligan
 Licensed under the BSD-3 license
