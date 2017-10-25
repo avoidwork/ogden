@@ -29,7 +29,7 @@ module.exports = function(grunt) {
           "src/prepositions.js",
           "src/pronouns.js",
           "src/verbs.js",
-          "src/parse.js",
+          "src/filter.js",
           "src/ogden.js",
           "src/outro.js"
         ],
