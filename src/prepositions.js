@@ -1,3 +1,3 @@
-const prepositions = new Set([
-  "come"
-]);
+	const prepositions = new Set([
+		"come"
+	]);

@@ -3,14 +3,15 @@
 			throw new TypeError("String required");
 		}
 
-		let fn = input.length > 0 ? parse : () => [];
+		const fn = input.length > 0 ? parse : () => [];
 
 		return {
 			adjectives: fn(input, adjectives),
 			compound: fn(input, compound),
 			adverbs: fn(input, adverbs),
 			international: fn(input, international),
-      nouns: fn(input, nouns),
+			nouns: fn(input, nouns),
+			prepositions: fn(input, prepositions),
 			pronouns: fn(input, pronouns),
 			operations: fn(input, operations),
 			verbs: fn(input, verbs)

@@ -1,3 +1,1 @@
-	function parse (input, words) {
-		return input.split(/\s/).filter(i => words.has(i)).sort();
-	}
+	const parse = (input, words) => input.split(/\s/).filter(i => words.has(i)).sort();
